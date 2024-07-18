@@ -90,9 +90,6 @@ public class Registrar extends JFrame{
         //cierro todo
         conecta.close();
         pstmt.close();
-
-
-
     }
 
     //1 creo mi metodo conexion

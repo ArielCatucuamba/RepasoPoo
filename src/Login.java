@@ -72,4 +72,11 @@ public class Login extends JFrame {
         String password="123456";
         return DriverManager.getConnection(url,user,password);
     }
+    public void Iniciar(){
+        setVisible(true);
+        setTitle("Actualizar registro");
+        setSize(500,500);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+    }
 }

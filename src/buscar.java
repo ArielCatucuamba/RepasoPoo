@@ -8,6 +8,8 @@ public class buscar extends JFrame{
     private JButton buscarPacienteButton;
     private JTextField cedula;
     private JPanel panel1;
+    private JButton actualizarPacienteButton;
+    private JButton irAEliminarButton;
 
     public buscar(){
         setContentPane(panel1);
@@ -32,6 +34,25 @@ public class buscar extends JFrame{
                 } catch (SQLException ex) {
                     throw new RuntimeException(ex);
                 }
+            }
+        });
+        actualizarPacienteButton.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Actualizar a4=new Actualizar();
+                a4.Iniciar();
+                dispose();
+            }
+        });
+
+        irAEliminarButton.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Eliminar e9=new Eliminar();
+                e9.Iniciar();
+                dispose();
             }
         });
     }
